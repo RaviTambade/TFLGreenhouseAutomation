@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse Automation Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .card h3 {
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Greenhouse Automation Dashboard</h1>
+</header>
+
+<nav>
+    <a href="About.html">Home</a>
+    <a href="ClimateControl.html">Climate Control</a>
+    <a href="Irrigation.html">Irrigation</a>
+    <a href="Monitoring.html">Monitoring</a>
+    <a href="Reports.html">Reports</a>
+    <a href="Settings.html">Settings</a>
+    <a href="Registration.html">Register</a>
+    <a href="Login.html">Login</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h3>Temperature Control</h3>
+        <p>Current Temperature: 24°C</p>
+        <button>Adjust Settings</button>
+    </div>
+    <div class="card">
+        <h3>Humidity Control</h3>
+        <p>Current Humidity: 65%</p>
+        <button>Adjust Settings</button>
+    </div>
+    <div class="card">
+        <h3>Irrigation System</h3>
+        <p>Next Watering: 2:00 PM</p>
+        <button>View Schedule</button>
+    </div>
+    <div class="card">
+        <h3>Soil Moisture</h3>
+        <p>Current Moisture Level: 40%</p>
+        <button>View Details</button>
+    </div>
+    <div class="card">
+        <h3>Light Control</h3>
+        <p>Current Light Level: 800 lx</p>
+        <button>Adjust Settings</button>
+    </div>
+    <div class="card">
+        <h3>Reports</h3>
+        <p>View detailed reports on climate, irrigation, and more.</p>
+        <button>View Reports</button>
+    </div>
+</div>
+
+</body>
+</html>
