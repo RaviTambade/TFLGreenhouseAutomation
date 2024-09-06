@@ -27,6 +27,14 @@ var flowers=[
 ];
 
 
+var foundFlowers=flowers.filter((flower)=>(flower.title=='Rose'));
+console.log("Searching flower........");
+
+console.log(foundFlowers);
+
+
+
+
 //Tree
 var greenhouse1={
     "location": "Tambade mala",
@@ -447,5 +455,4 @@ var greenhouseFinancials={
       "profit": 1300.0        // in USD
     }
   }
-
-  
+ 
