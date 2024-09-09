@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <canvas id="canvas1" width="300" height="300" 
+                onmousedown="onMouseDownHandler(event)"
+                onmouseup="onMouseUpHandler(event)" 
+                onmousemove="onMouseMoveHandler(event)"
+                style="border:1px solid blue"></canvas>
+        <script>
+            var startPoint={ x:0,y:0};
+            var endPoint={ x:0,y:0};
+            var isMouseDown=false;
+            
+            function onMouseDownHandler(e){
+                console.log("Down");
+                let x = e.clientX;
+                let y = e.clientY;
+                startPoint.x=x;
+                startPoint.y=y;
+                isMouseDown=true;
+            }
+
+            function onMouseMoveHandler(e){
+                if(isMouseDown){
+                    console.log(" mouse move with with mouse down button");
+                    let x = e.clientX;
+                    let y = e.clientY;
+                    endPoint.x=x;
+                    endPoint.y=y;
+                    const cnvs=document.getElementById('canvas1');
+                    const ctx=cnvs.getContext("2d");
+                    ctx.beginPath();
+                    
+                    const rect=cnvs.getBoundingClientRect();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(rect.top, rect.left, rect.width, rect.height);
+
+                    ctx.moveTo(startPoint.x, startPoint.y);
+                    ctx.lineTo(endPoint.x, endPoint.y);
+                    ctx.stroke();
+                }
+            }
+
+            function onMouseUpHandler(e){
+                console.log("Up");
+                let x = e.clientX;
+                let y = e.clientY;
+                endPoint.x=x;
+                endPoint.y=y;
+                const cnvs=document.getElementById('canvas1');
+                const ctx=cnvs.getContext("2d");
+
+                ctx.fillStyle = "white";
+                ctx.fillRect(20, 20, 100, 100);
+
+                ctx.beginPath();
+                ctx.moveTo(startPoint.x, startPoint.y);
+                ctx.lineTo(endPoint.x, endPoint.y);
+                ctx.stroke();
+
+                isMouseDown=false;
+            }
+        </script>
+    </body>
+</html>
