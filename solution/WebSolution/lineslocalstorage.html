@@ -63,10 +63,11 @@
             //Execution -----Main
 
             let strRetrievedLines=localStorage.getItem("lines");
-            if(strRetrievedLines !==  undefined){
+            if(strRetrievedLines !==  null){
                 lines=JSON.parse(strRetrievedLines); 
                 draw();
             }
+
        </script>
     </body>
 </html>
