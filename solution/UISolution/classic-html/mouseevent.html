@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title></title>
+        <!-- Separation of concern (SOC)-->
+        <style>
+            div {
+              width: 200px;
+              height: 100px;
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+    <body onmousemove="mouseMoveHandler(event)"
+          onmousedown="mouseDownHandler(event)"
+          onmouseup="mouseUpHandler(event)">
+       
+        <div id="div1"  >Transflower</div>  
+        <p id="para1"></p>
+        <script>
+         
+         function mouseDownHandler(e){
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "Coordinates: (" + x + "," + y + ")";
+            console.log("mouse down event");
+            var p1=document.getElementById('para1');
+            p1.textContent=coor;
+        }
+    
+         function mouseUpHandler(e){
+            let x = e.clientX;
+            let y = e.clientY;   
+            let coor = "Coordinates: (" + x + "," + y + ")";
+            console.log("mouse up event");
+            var p1=document.getElementById('para1');
+            p1.textContent=coor;
+        }
+
+        function mouseMoveHandler(e){
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "Coordinates: (" + x + "," + y + ")";
+            console.log("mouse move event");
+            var p1=document.getElementById('para1');
+            p1.textContent=coor;
+        }
+        </script>
+    </body>
+</html>

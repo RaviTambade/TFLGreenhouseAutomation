@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <canvas id="canvas1" width="300" height="300" 
+                onmousedown="onMouseDownHandler(event)"
+                onmouseup="onMouseUpHandler(event)" 
+                style="border:1px solid blue"></canvas>
+        <script>
+            //global variables
+            var startPoint={ x:0,y:0};
+            var endPoint={ x:0,y:0};
+            
+            function onMouseDownHandler(e){
+                console.log("Down");
+                let x = e.clientX;
+                let y = e.clientY;
+                startPoint.x=x;
+                startPoint.y=y;
+            }
+
+            function onMouseUpHandler(e){
+                console.log("Up");
+                let x = e.clientX;
+                let y = e.clientY;
+                endPoint.x=x;
+                endPoint.y=y;
+                const cnvs=document.getElementById('canvas1');
+                const ctx=cnvs.getContext("2d");
+                ctx.beginPath();
+                var width=endPoint.x-startPoint.x;
+                var height=endPoint.y-startPoint.y;
+                ctx.rect(startPoint.x,startPoint.y, width,height);
+                ctx.stroke();
+            }
+        </script>
+    </body>
+</html>

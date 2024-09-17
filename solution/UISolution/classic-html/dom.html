@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Programming</title>
+</head>
+<body>
+    <h1 id="header">Hello, World!</h1>
+    <button id="changeTextButton">Change Text</button>
+    <button id="addElementButton">Add Element</button>
+    <script>
+        // Accessing the header element by ID
+        const header = document.getElementById('header');
+         // Adding an event listener to change the header text when the button is clicked
+
+        //Event Driven Programming
+         const btnChangeText=document.getElementById("changeTextButton");
+         btnChangeText.addEventListener('click', function(){
+            header.textContent="Welcome to Transflower";
+         });
+
+         const btnAddElement=document.getElementById("addElementButton");
+         btnAddElement.addEventListener('click', function(){
+            const para1=document.createElement('p');
+            para1.textContent="Mentor as a Service....";
+            document.body.appendChild(para1);
+         });
+    </script>
+
+</body>
+</html>

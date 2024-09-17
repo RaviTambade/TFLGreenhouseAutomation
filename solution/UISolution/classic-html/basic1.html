@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transflower</title>
+    </head>
+    <body>
+        <h1>Transflower</h1>
+        <hr/>
+
+        <!-- Static page-->
+        <!--HTML document containes static HTML only-->
+        <!--- Dynamic page (Interactive Web Page)-->
+         <!--HTML document containes  HTML along with javascript code to minipulate DOM-->
+        <!--register event handlers with event  -->
+        <!--map events with event handlers-->
+        <!--subscribe event handlers with event-->
+        <!--Add event listeners with events-->
+        <!--Attach event handlers with events-->
+
+
+        <button onclick="show()">show</button>
+        <button onclick="display()">display</button>
+        <hr/>
+
+        <!--- DOM (Document Object Model)-->
+        <h5>DOM Programming</h5>
+        <p id="pcompany">Transflower</p>
+        <p id="pslogan">Mentor as a service</p>
+        <button onclick="onSubmitButtonClick()">submit</button>
+
+        <script>
+        
+        //variables:
+        //local variable 
+        //global variable
+        var flower={
+            "id":34,
+            "title":"Rose",
+            "description":"beautiful flower",
+            "unitprice":15,
+            "quantity":7000
+        };
+
+        var flowers=[
+            {"id":34,"title":"Rose","description":"beautiful flower","unitprice":15,"quantity":7000},
+            {"id":35,"title":"Lotus","description":"beautiful flower","unitprice":15,"quantity":7000},
+            {"id":36,"title":"Jasmine","description":"beautiful flower","unitprice":15,"quantity":7000},
+            {"id":78,"title":"Lily","description":"beautiful flower","unitprice":15,"quantity":7000},
+            {"id":89,"title":"Orchid","description":"beautiful flower","unitprice":15,"quantity":7000},
+            {"id":98,"title":"Marigold","description":"beautiful flower","unitprice":15,"quantity":7000},
+            {"id":354,"title":"Gerbera","description":"beautiful flower","unitprice":15,"quantity":7000}
+        ];
+       
+
+        console.log("Transflower Welcome console");
+        console.log(flower);
+        console.log(flowers);
+        var count=flowers.length;
+        console.log("number of flower :"+ count);
+        var flower3={"id":56,"title":"Carnation","description":"festival flower","unitprice":5,"quantity":7700};
+        console.log(flower3);  
+        flowers.push(flower3);
+
+        var count=flowers.length;
+        console.log("number of flower :"+ count);
+
+        function display(){
+            //scope variable
+            let fullName="Ravi Tambade";
+            console.log(fullName);
+            console.log(flower);
+        }
+
+        //ES6 : version of Javascript
+
+        //Runtime invocation
+        const show=()=>{
+            let company="Transflower";
+            let fullName="Sachin Patil";
+            console.log(company);
+            console.log(fullName);
+            console.log(flower);
+        }
+
+        //invoke function
+
+        //predefine of invocation
+        //early binding
+        /*display();
+        show();*/
+
+        const onSubmitButtonClick=()=>{
+            console.log("Submit button is clicked");
+            //DOM API
+            let company=document.getElementById("pcompany");
+            company.innerHTML="Microsoft";
+        }
+
+        //basic syntax of HTML
+        //basic syntax of Javascript
+        //basics of DOM API (Application Programming Interface)
+
+        </script>
+    </body>
+</html>

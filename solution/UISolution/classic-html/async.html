@@ -1,0 +1,66 @@
+<html>
+
+</html>
+    <head>
+        <title>basic page</title>
+    </head>
+    <body>
+
+        <h2>Welcome Transflower</h2>
+        <button onclick="show()">click me</button>
+        <script>
+                //Normal function
+                function show() {
+                    console.log("Show data");
+                }
+
+                 //normal function 
+                function showTime(){
+
+                    let start=Date.now();
+                    var date = new Date(start)
+                    console.log(date);
+                    console.log( " Executing ShowTime ().........");
+                    return 34;
+
+                }
+
+                //normal function
+                function onTimeCallback(){
+                    //long running task logic
+                    console.log("Core Business Operation executing (onTimeCallback).....");
+                }
+
+                // function which returns promise
+                //asynchronous function using promise
+                function  asyncFunction(){
+                    return new Promise( (resolve)=>{
+                         console.log("I am inside async function ");
+
+                        setTimeout( ()=>{
+                            console.log("call back function is getting invoked  after 5 seconds");
+                            resolve ("Promised resolved......");
+                        },5000);
+                        console.log("Timer is set for 5000 milliseconds");
+                    })
+                }
+
+
+               /* console.log( "Before calling ShowTime ().........");
+                //Synchronous call to ShowTime
+                showTime();   //Blocking call
+                console.log( "After calling ShowTime ().........");
+
+                console.log( "Before calling onTimeCallback ().........");
+                //Asynchronous call to OnTimeCallback
+                setTimeout(onTimeCallback, 3000);  //Non-Blocking call
+                console.log( "After calling onTimeCallback ().........");
+                */
+
+                asyncFunction().then( (message)=>{
+                    //console.log(message);
+                    console.log("This function is called automatically after invoking asyncFunction")
+                })
+        </script>
+    </body>
+    </html>

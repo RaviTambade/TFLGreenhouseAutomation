@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>GDI</h1>
+       <p>Graphics PRogramming using HTML and javascript</p>
+       <hr/>
+       <ol>
+        <li>Line</li>
+        <li>Rectangle</li>
+        <li>Elipse</li>
+       </ol>
+       <canvas id="myCanvas"  width="300" height="200" 
+               style="border:1px solid blue"></canvas>
+       <script>
+
+        const cnvs=document.getElementById('myCanvas');
+        const ctx=cnvs.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.lineTo(300,200);
+        ctx.stroke();
+
+        ctx.rect(10,10, 150,100);
+        ctx.fillStyle = "green";
+        ctx.fillRect(10,10, 150,100);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(10, 100);
+        ctx.quadraticCurveTo(250, 170, 230, 20);
+        ctx.stroke();
+
+        // Shadow
+        ctx.shadowColor = "lightblue";
+        ctx.shadowOffsetX = 10;
+        ctx.shadowOffsetY = 10;
+
+        // Filled rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 100);
+
+        // Stroked rectangle
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "blue";
+        ctx.strokeRect(170, 20, 100, 100);
+
+
+       </script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transflower</title>
+    </head>
+    <body>
+        <h1>Transflower</h1>
+        <hr/>
+            <input type="text" id="title" name="title" value="gerbera"/>
+            <button onclick="onInsertButtonClick()">Insert</button>
+
+            <br/>
+            <p id="presult"></p>
+        <script>
+            var flowers=[];
+
+            const onInsertButtonClick=()=>{
+                var txtTitle=document.getElementById("title");
+                var title=txtTitle.value ;
+                flowers.push(title);
+                console.log(flowers);
+                var paraResult=document.getElementById("presult");
+                paraResult.innerHTML=JSON.stringify(flowers);
+            }
+        </script>
+    </body>
+</html>

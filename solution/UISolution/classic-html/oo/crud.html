@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./scripts/util.js"></script>
+        <script src="./scripts/crud.js"></script>
+        <script src="./scripts/app.js"></script>
+    </head>
+    <body>
+        <h2>Flowers of Tambade mala</h2>
+        <table>
+            <tr> 
+                <td>Id</td>
+                <td><input type="number" id="id" name="id" value="1"/></td>     
+            </tr>
+            <tr>
+                <td>Ti</td>
+                <td> <input type="text" id="title" name="title" value="gerbera"/></td>  
+            </tr>
+            <tr> 
+                <td>Description</td>
+                <td>      <input type="text" id="description" name="description" value="Wedding flower"/></td>
+            </tr>
+            <tr>
+                <td>Unit Price</td>
+                <td><input type="number" id="unitprice" name="unitprice" value="12"/></td> 
+            </tr>
+            <tr>
+                <td>Quantity Available</td>
+                <td><input type="number" id="stockavailable" name="stockavailable" value="564"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>                    
+                       <button onclick="onShowAll()">Show all</button>
+                       <button onclick="onInsert()">Insert</button>
+                       <button onclick="onUpdate()">Update</button>
+                       <button onclick="onRemove()">Remove</button>
+                </td>  
+            </tr>
+        </table>
+        <ol id="list">  </ol>
+</body>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function show(){
+                var count=89;
+                count++;
+                console.log("Count="+ count);
+            }
+            show();
+
+            //ECommerce feateure for TFLGreenHouse Solution
+      
+            //Abstraction:
+            //
+            //Ecapsulation:
+            //Inheritance:
+            //Real world entities
+
+            //Products, shopping cart, order, payment, shipment, , Customer, 
+            //Seller, staff, adminstrator, Board of Directors
+            //Product : blue print
+            // as a class
+
+            class  Product{
+                constructor(id, title, description, unitprice, quantity){
+                    this.id=id;
+                    this.title=title;
+                    this.description=description;
+                    this.unitprice=unitprice;
+                    this.stackavailable=quantity;
+                }
+                    
+                show(){
+                    console.log(this);
+                }
+            }
+
+            //Parent class
+            class Person{
+                constructor(id, firstname, lastname){
+                    this.id=id;
+                    this.firstname=firstname;
+                    this.lastname=lastname;
+                }
+                show(){
+                    console.log( this.id + " , "+ this.firstname+ " , "+ this.lastname);
+                }
+            }
+
+            //Child class  : iS A Relationship
+            class Customer extends Person{
+                constructor(id, firstname, lastname,membership, email, contact){
+                    super(id, firstname, lastname);
+                    this.membership=membership;
+                    this.email=email;
+                    this.contact=contact;
+                }
+                show(){
+                    super.show();
+                    console.log(this.membership + " "+this.email+ " "+ this.contact);
+                }
+            }
+
+            class Point{
+                constructor(x, y){
+
+                    //Encapsulation
+                    this.x=x;
+                    this.y=y;
+                }
+                show(){
+                    console.log("{X="+ this.x + ", Y="+ this.Y+"}");
+                }
+
+                getX(){
+                    return this.x;
+                }
+                getY (){
+                    return this.y;
+                }
+                setX(xx){
+                      this.x=xx;
+                }
+                setY (yy){
+                     this.y=yy;
+                }
+            }
+
+            class Line{
+                constructor(stpt, endpt, thickness, color){
+                    this.startpoint=new Point(stpt.x, stpt.y);  //has a relationship
+                    this.endpoint=new Point(endpt.x, endpt.y); 
+                    this.thickness=thickness;
+                    this.color=color;
+                }
+
+                show(){
+                    console.log("Line object");
+                    this.startpoint.show();
+                    this.endpoint.show();
+                    console.log("thickness:"+ this.thickness + ", color="+ this.color);
+                }
+
+            }
+
+            let flower1= new Product(23,"Rose","valentine flower",12, 56000);
+            flower1.show();
+
+            let flower2= new Product(24,"lotus","worship flower",22, 12000);
+            flower2.show();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <canvas id="canvas1" width="300" height="300" 
+                onmousedown="onMouseDownHandler(event)"
+                onmouseup="onMouseUpHandler(event)" 
+                style="border:1px solid blue"></canvas>
+        <hr/>
+        <p>Local Storage : data management</p>
+        <button onclick="onStoreDatatLocalStorage()">Store data</button>
+        <button onclick="onRestoreDataLocalStorage()">Restore data</button>
+     
+        <p>Session Storeage : data management</p>
+        <button onclick="onStoreDatatSessionStorage()">Store data</button>
+        <button onclick="onRestoreDataSessionStorage()">Restore data</button>
+     
+
+        <script>
+            var startPoint={ x:0,y:0};
+            var endPoint={ x:0,y:0};
+            
+            function onMouseDownHandler(e){
+                console.log("Down");
+                let x = e.clientX;
+                let y = e.clientY;
+                startPoint.x=x;
+                startPoint.y=y;
+            }
+
+            function onMouseUpHandler(e){
+                console.log("Up");
+                let x = e.clientX;
+                let y = e.clientY;
+                endPoint.x=x;
+                endPoint.y=y;
+                const cnvs=document.getElementById('canvas1');
+                const ctx=cnvs.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(startPoint.x, startPoint.y);
+                ctx.lineTo(endPoint.x, endPoint.y);
+                ctx.stroke();
+            }
+       
+            //Session Storage data store and restore
+            function onStoreDatatSessionStorage(){
+                     let l1={
+                        id:12,
+                        startpoint:{x:12, y:45},
+                        endpoint:{x:200, y:245},
+                        thickness:2,
+                        color:"red"
+                     };
+                    let strL1=JSON.stringify(l1);
+                    sessionStorage.setItem('l1',strL1);
+            }
+            function onRestoreDataSessionStorage(){
+
+                let strRestoredLine=sessionStorage.getItem("l1");
+                let lRestoredLine=JSON.parse(strRestoredLine);
+                console.log(" from Session Storeage Data " +lRestoredLine);
+
+            }
+       
+            //Local Storage data store and restore
+            function onStoreDatatLocalStorage(){
+                     let l1={
+                        id:12,
+                        startpoint:{x:12, y:45},
+                        endpoint:{x:200, y:245},
+                        thickness:2,
+                        color:"red"
+                     };
+                    let strL1=JSON.stringify(l1);
+                    localStorage.setItem('line',strL1);
+            }
+            function onRestoreDataLocalStorage(){
+
+                let strRestoredLine=localStorage.getItem("line");
+                let lRestoredLine=JSON.parse(strRestoredLine);
+                console.log(lRestoredLine);
+
+            }
+       
+      
+
+       </script>
+    </body>
+</html>
