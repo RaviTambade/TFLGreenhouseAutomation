@@ -7,7 +7,6 @@ const Details=(props)=>{
             <p> ${props.product.unitprice}</p>    
             <p>Stock available: {props.product.quantity}</p>
             <Counter likes={props.product.likes}/>
-     
         </div>
     );
 }

@@ -4,7 +4,8 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>Transflower Greenhouse Automation</h1>
+      <h1>Transflower Fram</h1>
+      <p>Greenhouse Automation</p>
     </header>
   );
 };

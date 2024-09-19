@@ -34,9 +34,7 @@ const LightingControl = () => {
   return (
     <div>
       <h2>Lighting Control</h2>
-      <button onClick={handleToggle}>
-        {lightStatus ? 'Turn Off' : 'Turn On'}
-      </button>
+      <button onClick={handleToggle}> {lightStatus ? 'Turn Off' : 'Turn On'} </button>
       <p>Light is currently {lightStatus ? 'On' : 'Off'}</p>
     </div>
   );

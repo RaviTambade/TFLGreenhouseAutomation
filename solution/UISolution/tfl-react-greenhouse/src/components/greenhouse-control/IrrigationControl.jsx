@@ -34,9 +34,7 @@ const IrrigationControl = () => {
   return (
     <div>
       <h2>Irrigation Control</h2>
-      <button onClick={handleToggle}>
-        {irrigationStatus ? 'Turn Off' : 'Turn On'}
-      </button>
+      <button onClick={handleToggle}>{irrigationStatus ? 'Turn Off' : 'Turn On'} </button>
       <p>Irrigation is currently {irrigationStatus ? 'On' : 'Off'}</p>
     </div>
   );

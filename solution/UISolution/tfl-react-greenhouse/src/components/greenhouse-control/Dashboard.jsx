@@ -8,10 +8,16 @@ import IrrigationControl from './IrrigationControl';
 const Dashboard = () => {
   return (
     <div>
-      <TemperatureControl />
-      <HumidityControl />
-      <LightingControl />
-      <IrrigationControl />
+      <table>
+        <tr> 
+          <td> <TemperatureControl /></td>
+          <td> <HumidityControl /></td>
+        </tr>
+        <tr>
+          <td><LightingControl /></td>
+          <td> <IrrigationControl /></td>
+        </tr>
+      </table>
     </div>
   );
 };

@@ -34,11 +34,7 @@ const HumidityControl = () => {
   return (
     <div>
       <h2>Humidity Control</h2>
-      <input
-        type="number"
-        value={humidity}
-        onChange={handleChange}
-      />
+      <input type="number" value={humidity} onChange={handleChange} />
       <p>Current Humidity: {humidity}%</p>
     </div>
   );

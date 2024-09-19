@@ -34,11 +34,7 @@ const TemperatureControl = () => {
   return (
     <div>
       <h2>Temperature Control</h2>
-      <input
-        type="number"
-        value={temperature}
-        onChange={handleChange}
-      />
+      <input type="number" value={temperature} onChange={handleChange} />
       <p>Current Temperature: {temperature}°C</p>
     </div>
   );
