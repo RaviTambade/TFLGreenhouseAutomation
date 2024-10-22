@@ -32,3 +32,29 @@ FROM SensorReadings sr
 JOIN Sensors S ON sr.SensorID=s.SensorID
 JOIN Settings st ON s.SensorType = st.SensorType
 WHERE sr.ReadingValue < st.ThresholdMin OR sr.ReadingValue > st.ThresholdMax;
+
+
+--6. Find Alerts for Threshold Viloations
+ SELECT sr.ReadingID, st.SensorType, st.ThresholdMin, st.ThresholdMax, sr.ReadingValue
+  FROM SensorReadings sr 
+  Join Sensors s ON sr.SensorID = s.SensorID
+  JOIN Settings st ON s.SensorType = st.SensorType
+ WHERE sr.ReadingValue < st.ThresholdMin OR sr.ReadingValue > st.ThresholdMax; -- INSERT INTO SensorReadings (SensorID, ReadingValue, ReadingTime) VALUES (1, 40, GETDATE()); 
+--7. Count of Sensor Readings per Sensor Types SELECT s.SensorType, COUNT(sr.ReadingID) AS Reading_count FROM SensorReadings sr JOIN Sensors s ON sr.SensorID = s.SensorID GROUP BY s.SensorType;
+ --8. Get users with Admin Role. 
+SELECT * FROM users WHERE role= 'Admin'; 
+--9. Get Devices that are currently On 
+SELECT * 
+FROM ControlDevices
+ WHERE status = 'on'; 
+--10. Recent actions taken by Control Devices 
+SELECT cd.DeviceID, cd.DeviceType, cl.Action, cl.ActionTime
+ FROM ControlLogs cl
+  JOIN ControlDevices cd ON cl.DeviceID = cd.DeviceID 
+  ORDER BY cl.ActionTime DESC; 
+--11. Retrieve Settings for Sensor Types.
+ SELECT * FROM Settings; 
+--12. Average Sensor Reading for Temperature.
+ SELECT AVG(ReadingValue) AS Average_temp
+ FROM SensorReadings
+ WHERE SensorID = (SELECT SensorID FROM Sensors WHERE SensorType = 'Temperature');
