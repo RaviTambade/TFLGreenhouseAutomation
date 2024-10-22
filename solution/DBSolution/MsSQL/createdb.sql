@@ -30,5 +30,30 @@ CREATE TABLE SensorReadings (
     ReadingTime DATETIME DEFAULT GETDATE()
 );
 
+-- creating a table ControlDevices
+CREATE TABLE ControlDevices (
+	DeviceID INT PRIMARY KEY IDENTITY(1,1),
+    DeviceType NVARCHAR(50) NOT NULL, -- e.g., Water Pump, Heater
+    Status NVARCHAR(20), -- e.g., On, Off
+    Location NVARCHAR(100) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+ 
+-- creating a table ControlLogs
+CREATE TABLE ControlLogs (
+	LogID INT PRIMARY KEY IDENTITY(1,1),
+		DeviceID INT FOREIGN KEY REFERENCES ControlDevices(DeviceID),
+    Action NVARCHAR(100), -- e.g., Started, Stopped
+    ActionTime DATETIME DEFAULT GETDATE()
+);
+ 
+-- creating a table Settings
+CREATE TABLE Settings (
+		SettingID INT PRIMARY KEY IDENTITY(1,1),
+    		SensorType NVARCHAR(50) NOT NULL,
+    		ThresholdMin FLOAT,
+    		ThresholdMax FLOAT,
+    		NotificationEnabled BIT DEFAULT 0
+);
 
 
