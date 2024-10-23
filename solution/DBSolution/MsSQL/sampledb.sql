@@ -16,7 +16,11 @@ INSERT INTO SensorReadings (SensorID, ReadingValue, ReadingTime) VALUES
 (2, 60.0, GETDATE()),  -- Humidity reading
 (3, 30.0, GETDATE()),  -- Soil moisture reading
 (4, 500, GETDATE()),    -- Light intensity reading
-(1, 40, GETDATE());
+(1, 40, GETDATE()),		-- Temperature reading
+(2, 50, GETDATE()),		-- Humidity reading
+(3, 30, GETDATE()),		-- Soil moisture reading
+(4, 508, GETDATE());	-- Light intensity reading
+
 
 -- Inserting into ControlDevices
 
