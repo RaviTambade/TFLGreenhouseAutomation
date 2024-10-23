@@ -1,0 +1,35 @@
+<div>
+ <h1>Update Nutrition Deficiency</h1>
+<br/>
+<div>
+    <form #nutritionForm="ngForm" (ngSubmit)="submit(nutritionForm.value)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="name"  [(ngModel)]="nutrition.cropName" ></td>
+    </tr>     
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="nutricient"  [(ngModel)]="nutrition.nutricient"></td>
+    </tr>
+    <tr>
+        <td><label>Symptoms:</label></td>
+        <td><input type="text" name="symptoms"  [(ngModel)]="nutrition.symptoms"></td>
+    </tr>
+    <tr>
+        <td> <label>Image:</label></td>
+        <td><input type="text" name="imageUrl"  [(ngModel)]="nutrition.imageUrl"></td>
+    </tr>
+    <tr>
+        <td> <label>Remedy:</label></td>
+        <td><input type="text" name="remedy"  [(ngModel)]="nutrition.remedy"></td>
+    </tr>
+     
+     <tr>
+       <td><button type="submit">Submit</button> </td>
+        
+    </tr>
+</table>
+</form>
+</div>
+</div>

@@ -1,0 +1,79 @@
+<div>
+ <h1>Update Fertilizer</h1>
+<br/>
+<div>
+    <form #fertilizerForm="ngForm" (ngSubmit)="onSubmit(fertilizerForm.value)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="title"  [(ngModel)]="fertilizer.name" ></td>
+    </tr>     
+    <tr>
+        <td><label>ChemicalFormula:</label></td>
+        <td><input type="text" name="chemicalFormula"  [(ngModel)]="fertilizer.chemicalFormula"></td>
+    </tr>
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="description"  [(ngModel)]="fertilizer.description"></td>
+    </tr>
+    <tr>
+        <td> <label>N:</label></td>
+        <td><input type="number" name="N"  [(ngModel)]="fertilizer.N"></td>
+    </tr>
+    <tr>
+        <td> <label>P:</label></td>
+        <td><input type="number" name="P"  [(ngModel)]="fertilizer.P"></td>
+    </tr>
+    <tr>
+        <td> <label>K:</label></td>
+        <td><input type="number" name="K"  [(ngModel)]="fertilizer.K"></td>
+    </tr>
+
+     <tr>
+        <td> <label>Ca:</label></td>
+        <td><input type="number" name="Ca"  [(ngModel)]="fertilizer.Ca"></td>
+    </tr>
+    <tr>
+        <td> <label>Mg:</label></td>
+        <td><input type="number" name="Mg"  [(ngModel)]="fertilizer.Mg"></td>
+    </tr>
+    <tr>
+        <td> <label>Cl:</label></td>
+        <td><input type="number" name="Cl"  [(ngModel)]="fertilizer.Cl"></td>
+    </tr>
+    <tr>
+        <td> <label>S:</label></td>
+        <td><input type="number" name="S"  [(ngModel)]="fertilizer.S"></td>
+    </tr>
+    <tr>
+        <td> <label>Cu:</label></td>
+        <td><input type="number" name="Cu"  [(ngModel)]="fertilizer.Cu"></td>
+    </tr>
+    <tr>
+        <td> <label>Mn:</label></td>
+        <td><input type="number" name="Mn"  [(ngModel)]="fertilizer.Mn"></td>
+    </tr>
+    <tr>
+        <td> <label>B:</label></td>
+        <td><input type="number" name="B"  [(ngModel)]="fertilizer.B"></td>
+    </tr>
+    <tr>
+        <td> <label>Zn:</label></td>
+        <td><input type="number" name="Zn"  [(ngModel)]="fertilizer.Zn"></td>
+    </tr>
+    <tr>
+        <td> <label>Fe:</label></td>
+        <td><input type="number" name="Fe"  [(ngModel)]="fertilizer.Fe"></td>
+    </tr>
+    <tr>
+        <td> <label>Na:</label></td>
+        <td><input type="number" name="Na"  [(ngModel)]="fertilizer.Na"></td>
+    </tr>
+     
+    <tr>
+       <td><button type="submit">Update</button> </td>
+    </tr>
+</table>
+</form>
+</div>
+</div>

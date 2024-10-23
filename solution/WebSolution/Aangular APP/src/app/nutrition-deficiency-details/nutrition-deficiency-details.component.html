@@ -1,0 +1,15 @@
+<h2> Nutrition deficiency Details</h2>
+
+<p> ID: {{nutrition.nutritionId}}</p>
+<p><b> Crop Name: {{nutrition.cropName}}</b></p>
+<p> Nutricient: {{nutrition.nutricient}}</p>
+<p> Symptoms: {{nutrition.symptoms}}</p>
+<p> Image: {{nutrition.imageUrl}}</p>
+<p> Remedy: {{nutrition.remedy}}</p>
+
+<p> <a [routerLink]="['/nutritionupdate',nutrition.nutritionId]">Update</a>|
+ 
+<a [routerLink]="['/nutritioninsert']">New Nutrition</a>
+|<a [routerLink]="['/nutritiondelete',nutrition.nutritionId]">Delete Nutrition</a>
+
+</p>

@@ -1,0 +1,30 @@
+<div>
+ <h1>Update Pest Detail</h1>
+<br/>
+<div>
+    <form #form="ngForm" (ngSubmit)="submit(form.pest)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="name"  [(ngModel)]="pest.name" ></td>
+    </tr>     
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="description"  [(ngModel)]="pest.description"></td>
+    </tr>
+    <tr>
+        <td><label>Symptoms:</label></td>
+        <td><input type="text" name="symptoms"  [(ngModel)]="pest.symptoms"></td>
+    </tr>
+    <tr>
+        <td> <label>Remedy:</label></td>
+        <td><input type="text" name="remedy"  [(ngModel)]="pest.remedy"></td>
+    </tr>
+     
+    <tr>
+       <td><button type="submit">Update</button> </td>
+    </tr>
+</table>
+</form>
+</div>
+</div>

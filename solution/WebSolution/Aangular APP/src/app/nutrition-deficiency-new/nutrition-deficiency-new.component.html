@@ -1,0 +1,59 @@
+<p>
+  New  Nutrition Deficiency
+</p>
+<div >
+  <h2 >Demo Form: New nutrition Deficiency</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" >
+
+
+     <div>
+      <label for="titleInput">Nutrition ID</label>
+      <input type="text" id="titleInput"
+             placeholder="Enter crop name here"
+             name="nutritionId" ngModel>
+    </div>
+
+    <div>
+      <label for="titleInput">Crop Name</label>
+      <input type="text"
+             id="titleInput"
+             placeholder="Enter crop name here"
+             name="cropName" ngModel>
+    </div>
+
+    <div>
+      <label for="Nutricient">Nutricient</label>
+      <input type="text"
+             id="NutritientInput"
+             placeholder="enter nutricient"
+             name="nutricient" ngModel>
+    </div>
+
+    <div>
+      <label for="SymptomsInput">Symptoms</label>
+      <input type="text"
+             id="SymptomsInput"
+             placeholder="enter Symptoms"
+             name="symptoms" ngModel>
+    </div>
+
+    <div>
+      <label for="ImageUrlInput">ImageUrl</label>
+      <input type="text"
+             id="remedyInput"
+             placeholder="enter Remedy"
+             name="imageUrl" ngModel>
+    </div>
+
+
+    <div>
+      <label for="RemedyInput">Remedy</label>
+      <input type="text"
+             id="remedyInput"
+             placeholder="enter Remedy"
+             name="remedy" ngModel>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

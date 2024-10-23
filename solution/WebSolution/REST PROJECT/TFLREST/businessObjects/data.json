@@ -1,0 +1,12 @@
+ 
+    db.users.insert({userID:1001,firstName:'Shubham',lastName:'Tambade',email:'shubham.tambade@gmail.com',age:25,birthDate:'2013-2-2 12:32:10',phoneNo:9975550931,location:'Pune',isStaff:true,memberShip:'P',password:'angularjs'});
+    db.users.insert({userID:1002,firstName:'Omkar',lastName:'Hinge',email:'omkar.hinge@gmail.com',age:26,birthDate:'2013-2-2 12:32:10',phoneNo:8787896520,location:'Nashik',isStaff:true,memberShip:'G',password:'angularjs'});
+    db.users.insert({userID:1003,firstName:'Rahul',lastName:'Navale',email:'rahulsn@gmail.com',age:28,birthDate:'2013-2-2 12:32:10',phoneNo:8888828345,location:'Mumbai',isStaff:true,memberShip:'P',password:'youknowmypassword'});
+    db.users.insert({userID:1004,firstName:'Ravi',lastName:'Tambade',email:'ravi.tambade@gmail.com',age:40,birthDate:'2013-2-2 12:32:10',phoneNo:9881735801,location:'Bangalore',isStaff:true,memberShip:'P',password:'angularjs'});
+    db.users.insert({userID:1005,firstName:'Aarush',lastName:'Tambade',email:'aarush.tambade@gmail.com',age:21,birthDate:'2013-2-2 12:32:10',phoneNo:8745210214,location:'Mumbai',isStaff:true,memberShip:'P',password:'angularjs'});
+    db.users.insert({userID:1006,firstName:'Anup',lastName:'More',email:'anup.more@gmail.com',age:26,birthDate:'2013-2-2 12:32:10',phoneNo:9970456250,location:'Delhi',isStaff:false,memberShip:'S',password:'angularjs'});
+    db.users.insert({userID:1007,firstName:'Shailesh',lastName:'Kale',email:'shailesh.kale@gmail.com',age:27,birthDate:'2013-2-2 12:32:10',phoneNo:8888827882,location:'Mumbai',isStaff:false,memberShip:'G',password:'angularjs'});
+    db.users.insert({userID:1008,firstName:'Shubhangi',lastName:'Tambade',email:'shubhangi.tambade@gmail.com',age:35,birthDate:'2013-2-2 12:32:10',phoneNo:7451252302,location:'Chennai',isStaff:true,memberShip:'P',password:'angularjs'});
+    db.users.insert({userID:1009,firstName:'Mayur',lastName:'Patole',email:'mayur.patole@gmail.com',age:30,birthDate:'2013-2-2 12:32:10',phoneNo:9856325623,location:'Pune',isStaff:true,memberShip:'P',password:'angularjs' });
+    db.users.insert({CustomerId:1002,FirstName:'Ritesh',LastName:'Sharma',Address:'Latur',Email:'ritesh.sharma@yahoo.com',MobileNo:'9874521212',RegistrationDate:'2013-2-2 12:32:10'})
+    db.customers.insert({CustomerId:1002,FirstName:'Ritesh',LastName:'Sharma',Address:'Latur',Email:'ritesh.sharma@yahoo.com',MobileNo:'9874521212',RegistrationDate:'2013-2-2 12:32:10'})

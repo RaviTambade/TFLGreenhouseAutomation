@@ -1,0 +1,21 @@
+<h2> Ingredients Details</h2>
+
+<div>
+ <p> ID:{{ingredient.ingredientsID}}</p>
+ <p> SolutionName:{{ingredient.solutionName}}</p> 
+ <p> FertilizerName:{{ingredient.fertilizerName}}</p>
+<p> Quantity:{{ingredient.quantity}}</p>
+
+ <p>
+     <a [routerLink]="['/ingredientupdate',ingredient.ingredientsID]">Update</a>
+     |<a [routerLink]="['/ingredientnew']">New INgredient</a>|
+     |<a [routerLink]="['/ingredientdelete',ingredient.ingredientsID]">Delete Ingredient</a>
+ </p>
+
+
+</div>
+
+
+
+
+ 

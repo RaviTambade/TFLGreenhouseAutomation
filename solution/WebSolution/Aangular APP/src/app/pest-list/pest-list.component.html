@@ -1,0 +1,6 @@
+<h2> Transflower Farms</h2>
+
+<div  *ngFor="let pest of pests">
+ <p>{{pest.pestId}}  | {{pest.name}}|<a [routerLink]="['/pestdetail', pest.pestId]">Details</a>
+ 
+</div>

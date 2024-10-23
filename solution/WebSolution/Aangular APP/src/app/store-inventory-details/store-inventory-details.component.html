@@ -1,0 +1,14 @@
+<h2> Inventory Details</h2>
+
+<p> Item ID: {{item.itemId}}</p>
+<p><b> Title: {{item.title}}</b></p>
+<p> Description: {{item.description}}</p>
+<p> Category: {{item.category}}</p>
+<p> stocks: {{item.stocks}}</p>
+
+
+<p>   <a [routerLink]="['/iteminsert']">New Inventory</a>
+     |<a [routerLink]="['/itemupdate',item.itemId]">Update Inventory</a>
+     |<a [routerLink]="['/itemdelete',item.itemId]">Delete Inventory</a>
+     <!--|<a [routerLink]="['/deleteInventory',item.itemId]">Delete Inventory</a>
+--></p>

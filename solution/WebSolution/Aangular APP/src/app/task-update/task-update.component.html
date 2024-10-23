@@ -1,0 +1,74 @@
+<div>
+ <h1>Update Task</h1>
+<br/>
+<div>
+     <form #form="ngForm" (ngSubmit)="submit(form.task)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="title"  [(ngModel)]="task.title" ></td>
+    </tr>     
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="description"  [(ngModel)]="task.description"></td>
+    </tr>
+    <tr>
+        <td><label>Category:</label></td>
+        <td><input type="text" name="category"  [(ngModel)]="task.category"></td>
+    </tr>
+    <tr>
+        <td> <label>Duration:</label></td>
+        <td><input type="text" name="duration"  [(ngModel)]="task.duration"></td>
+    </tr>
+     <tr>
+        <td> <label>Day:</label></td>
+        <td><input type="text" name="day"  [(ngModel)]="task.day"></td>
+    </tr>
+     
+      <tr>
+        <td> <label>Year:</label></td>
+        <td><input type="text" name="year"  [(ngModel)]="task.year"></td>
+    </tr>
+     
+     
+     
+      <tr>
+        <td> <label>Month:</label></td>
+        <td><input type="text" name="month"  [(ngModel)]="task.month"></td>
+    </tr>
+     
+      <tr>
+        <td> <label>Hr:</label></td>
+        <td><input type="text" name="hr"  [(ngModel)]="task.hr"></td>
+    </tr>
+
+    <tr>
+        <td> <label>Mins:</label></td>
+        <td><input type="text" name="mins"  [(ngModel)]="task.mins"></td>
+    </tr>
+
+     <tr>
+        <td> <label>Status:</label></td>
+        <td><input type="text" name="status"  [(ngModel)]="task.status"></td>
+    </tr>
+
+     <tr>
+        <td> <label>AssignTo:</label></td>
+        <td><input type="text" name="remedy"  [(ngModel)]="task.assignTo"></td>
+    </tr>
+     
+        <tr>
+        <td> <label>AssignBy:</label></td>
+        <td><input type="text" name="assignBy"  [(ngModel)]="task.assignBy"></td>
+    </tr>
+     
+     
+     
+    <tr>
+       <td><button type="submit">Submit</button> </td>
+        
+    </tr>
+</table>
+</form>
+</div>
+</div>

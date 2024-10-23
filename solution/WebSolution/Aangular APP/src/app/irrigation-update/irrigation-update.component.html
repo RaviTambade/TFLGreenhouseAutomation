@@ -1,0 +1,44 @@
+<div>
+ <h1>Update Irrigation</h1>
+<br/>
+<div>
+    <form #irrigationForm="ngForm" (ngSubmit)="onSubmit(irrigationForm.value)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="greenhouseName"  [(ngModel)]="irrigation.greenhouseName" ></td>
+    </tr>     
+    <tr>
+        <td><label>Category:</label></td>
+        <td><input type="text" name="waterMoisture"  [(ngModel)]="irrigation.waterMoisture"></td>
+    </tr>
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="pumpStatus"  [(ngModel)]="irrigation.pumpStatus"></td>
+    </tr>
+     <tr>
+        <td><label>Start Time:</label></td>
+        <td><input type="text" name="startTime"  [(ngModel)]="irrigation.startTime"></td>
+    </tr>
+     <tr>
+        <td><label>Duration:</label></td>
+        <td><input type="text" name="duration"  [(ngModel)]="irrigation.duration"></td>
+    </tr>
+    <tr>
+        <td> <label>Season:</label></td>
+        <td><input type="text" name="tankA"  [(ngModel)]="irrigation.tankA"></td>
+    </tr>
+
+     <tr>
+        <td> <label>Season:</label></td>
+        <td><input type="text" name="tankB"  [(ngModel)]="irrigation.tankB"></td>
+    </tr>
+     
+    <tr>
+       <td><button type="submit" [disabled] = "!irrigationForm.valid">Update</button> </td>
+       <td><button type="submit">Reset</button> </td>
+    </tr>
+</table>
+</form>
+</div>
+</div>

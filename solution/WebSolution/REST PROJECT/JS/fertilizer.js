@@ -1,0 +1,13 @@
+db.fertilizer.insert({FertilizerId:1,Name:'Potassium Nitrate',Description:'',ChemicalFormula:'KNO3',N:36 ,P:97,K:10,Ca:10 ,Mg:12 ,Cl:11 ,S:1.5 ,Mn:2.5 ,B:3 ,Fe:3.2 ,Cu:2.5 ,Zn:2 ,Na:2 });
+db.fertilizer.insert({FertilizerId:2,Name:'Potassium Sulphate',Description:'',ChemicalFormula:'K2SO4',N:20 ,P:35 ,K:110,Ca:20 ,Mg:15 ,Cl:14 ,S:45,Mn:35 ,B:36 ,Fe:15 ,Cu:14 ,Zn:16 ,Na:18 });
+db.fertilizer.insert({FertilizerId:3,Name:'Mono Potassium Phospate',Description:'',ChemicalFormula:'KPO4',N:15 ,P:53,K:75,Ca:14 ,Mg:36 ,Cl:14 ,S:16 ,Mn:14 ,B:12 ,Fe:18 ,Cu:14 ,Zn:13 ,Na:2 });
+db.fertilizer.insert({FertilizerId:4,Name:'Mono Calcium Phosphate',Description:'',ChemicalFormula:'CaPO4',N:32 ,P:12 ,K:20 ,Ca:34,Mg:1.5 ,Cl:1.2 ,S:2.1 ,Mn:2 ,B:5 ,Fe:8 ,Cu:6 ,Zn:4 ,Na:15 });
+db.fertilizer.insert({FertilizerId:5,Name:'Calcium Nitrate',Description:'',ChemicalFormula:'Ca(NO3)2',N:12 ,P:25 ,K:15 ,Ca:50,Mg:13 ,Cl:15 ,S:14 ,Mn:14 ,B:14 ,Fe:15 ,Cu:5 ,Zn:4 ,Na:4 });
+db.fertilizer.insert({FertilizerId:6,Name:'Ammonium Nitrate',Description:'',ChemicalFormula:'NH4NO3',N:41,P:4 ,K:5 ,Ca:8 ,Mg:7 ,Cl:8 ,S:7 ,Mn:45 ,B:4 ,Fe:15 ,Cu:21 ,Zn:2,Na:10 });
+db.fertilizer.insert({FertilizerId:1,Name:'Ammonium Sulphate',Description:'',ChemicalFormula:'(NH3)2SO3',N:88,P:14 ,K:23 ,Ca:3 ,Mg:12 ,Cl:2 ,S:4 ,Mn:7 ,B:5 ,Fe:15 ,Cu:23 ,Zn:3 ,Na:21 });
+db.fertilizer.insert({FertilizerId:2,Name:'Urea',Description:'',ChemicalFormula:'CO(NH2)2',N:55,P:15 ,K:19 ,Ca:2 ,Mg:45 ,Cl:2 ,S:63,Mn:3 ,B:35 ,Fe:2 ,Cu:21 ,Zn:32 ,Na:3 });
+db.fertilizer.insert({FertilizerId:3,Name:'Nitric Acid',Description:'',ChemicalFormula:'NH4SO4',N:121,P:12 ,K:1 ,Ca:21 ,Mg:21 ,Cl:2 ,S:5 ,Mn:5 ,B:5 ,Fe:6 ,Cu:7 ,Zn:8 ,Na:2 });
+db.fertilizer.insert({FertilizerId:4,Name:'Diammonium Phosphate',Description:'',ChemicalFormula:'(NH4)2HPO4',N:41,P:53,K:3 ,Ca:12 ,Mg:32 ,Cl:14 ,S:12 ,Mn:10 ,B:2 ,Fe:5 ,Cu:14 ,Zn:3 ,Na:18 });
+db.fertilizer.insert({FertilizerId:5,Name:'Phosphoric Acid',Description:'',ChemicalFormula:'H3PO4',N:47,P:96,K:3 ,Ca:31 ,Mg:10 ,Cl:2 ,S:32 ,Mn:36 ,B:25 ,Fe:14 ,Cu:25 ,Zn:3 ,Na:34 });
+db.fertilizer.insert({FertilizerId:6,Name:'Calcium Sulphate',Description:'',ChemicalFormula:'CaSO42H2O',N:24 ,P:19 ,K:19 ,Ca:49,Mg:34 ,Cl:35 ,S:39,Mn:36 ,B:13 ,Fe:31 ,Cu:31 ,Zn:34 ,Na:36 });
+db.fertilizer.insert({FertilizerId:6,Name:'Epsom Salts',Description:'',ChemicalFormula:'Na',N:32 ,P:2 ,K:3 ,Ca:31 ,Mg:26,Cl:36 ,S:34,Mn:12 ,B:34 ,Fe:36 ,Cu:14 ,Zn:25 ,Na:23 });

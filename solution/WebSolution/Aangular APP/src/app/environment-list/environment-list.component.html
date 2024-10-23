@@ -1,0 +1,9 @@
+<p>
+  Todays  Green house Environment
+
+</p>
+ 
+   <div  *ngFor="let env of environments">
+ <p>{{env.climateId}}  | {{env.temperature}} |<a [routerLink]="['/environmentdetail',env.climateId]">Details</a></p>
+ </div> 
+

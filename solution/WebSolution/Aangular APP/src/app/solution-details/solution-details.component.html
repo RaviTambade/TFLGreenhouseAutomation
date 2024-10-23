@@ -1,0 +1,25 @@
+<h2> Solution Details</h2>
+
+<p> ID: {{solution.solutionId}}</p>
+<p><b> Title: {{solution.title}}</b></p>
+<p> Quantity: {{solution.quantity}}</p>
+<p> Description: {{solution.description}}</p>
+<p> Day: {{solution.day}}</p>
+<p> Year: {{solution.year}}</p>
+<p> Month: {{solution.month}}</p>
+<p> Hour: {{solution.hour}}</p>
+<p> Minute: {{solution.minute}}</p>
+<p> GreenhouseName: {{solution.greenhouse}}</p>
+<p> IngredientName: {{solution.ingredients.name}}</p>
+<p> Ingredient Quantity: {{solution.ingredients.quantity}}</p>
+<p> Tank: {{solution.tank}}</p>
+
+
+<p>   <a [routerLink]="['/solutionadd']">NewSolution</a>
+     |<a [routerLink]="['/solutionupdate',solution.solutionId]">UpdateSolution</a>
+     |<a [routerLink]="['/solutiondelete',solution.solutionId]">DeleteSolution</a>
+</p>
+
+
+
+ 

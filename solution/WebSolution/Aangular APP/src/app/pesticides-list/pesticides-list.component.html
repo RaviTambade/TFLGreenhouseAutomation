@@ -1,0 +1,9 @@
+<h2> Pesticides</h2>
+
+<div  *ngFor="let pesticide of pesticides">
+ <p>{{pesticide.pesticideID}}  | {{pesticide.name}}
+    <a [routerLink]="['/pesticidedetail', pesticide.pesticideID]">Details</a>
+    </p>
+ 
+      
+</div> 

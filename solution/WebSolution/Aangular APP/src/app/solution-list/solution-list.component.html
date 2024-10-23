@@ -1,0 +1,13 @@
+ <h2> List of solutions</h2>
+
+<div  *ngFor="let solution of solutions">
+ <p>{{solution.solutionId}}  | {{solution.title}} |
+     
+     <a [routerLink]="['/solutiondetail', solution.solutionId]">Details</a></p>
+ </div> 
+
+
+
+
+
+

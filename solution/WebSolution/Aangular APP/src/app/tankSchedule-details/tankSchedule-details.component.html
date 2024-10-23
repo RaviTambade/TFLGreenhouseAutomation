@@ -1,0 +1,21 @@
+<h2> TankSchedule Details</h2>
+
+<p> ID: {{tankschedule.tankscheduleId}} </p>
+<p><b> Year:  {{tankschedule.year}}</b></p>
+<p><b> Month:  {{tankschedule.month}}</b></p>
+<p><b> Day:  {{tankschedule.day}}</b></p>
+<p><b> Hour:  {{tankschedule.hour}}</b></p>
+<p><b> Minute:  {{tankschedule.minute}}</b></p>
+<p> SolutionId:  {{tankschedule.solutionId}}</p>
+<p> TankName: {{tankschedule.tankName}}</p>
+<p> Quantity: {{tankschedule.quantity}}</p>
+<p> UsageDuration: {{tankschedule.usageDuration}}</p>
+
+ <p>
+      <a [routerLink]="['/tankScheduleadd']">Add</a>|
+      <a [routerLink]="['/tankScheduleupdate', tankschedule.tankscheduleId]">Update</a>|
+      <a [routerLink]="['/tankScheduledelete', tankschedule.tankscheduleId]">Delete</a>
+  </p>
+
+
+ 

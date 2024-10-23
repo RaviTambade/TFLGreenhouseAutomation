@@ -1,0 +1,22 @@
+<h2> Task Details</h2>
+
+<p> ID: {{task.taskId}}</p>
+<p><b> Title: {{task.title}}</b></p>
+<p> Description: {{task.description}}</p>
+<p> Category: {{task.category}}</p>
+<p> Day: {{task.day}}</p>
+<p> Year: {{task.year}}</p>
+<p> Month: {{task.month}}</p>
+<p> Hr: {{task.hr}}</p>
+<p> Mins: {{task.mins}}</p>
+
+<p> Status: {{task.status}}</p>
+<p> AssignTo: {{task.assignTo}}</p>
+<p> AssignBy: {{task.assignBy}}</p>
+
+
+
+<p>   <a [routerLink]="['/taskadd']">NewTask</a>
+     |<a [routerLink]="['/taskupdate',task.taskId]">UpdateTask</a>
+     |<a [routerLink]="['/taskdelete',task.taskId]">DeleteTask</a>
+</p>

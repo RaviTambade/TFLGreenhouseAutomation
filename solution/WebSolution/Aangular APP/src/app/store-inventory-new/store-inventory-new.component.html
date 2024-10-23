@@ -1,0 +1,32 @@
+<div >
+  <h2 >Demo Form: New Inventory</h2>
+  <form #f="ngForm" (ngSubmit)="submit(f.value)" >
+ <table>
+                <tr>
+                    <td><label>Item ID:</label></td>
+                    <td><input type="text" name="itemId" ngModel></td>
+                </tr>
+                <tr>
+                    <td><label>Title:</label></td>
+                    <td><input type="text" name="title" ngModel></td>
+                </tr>
+                <tr>
+                    <td><label>Description:</label></td>
+                    <td><input type="text" name="description" ngModel></td>
+                </tr>
+                <tr>
+                      <td><label>Category:</label></td>
+                      <td><input type="text" name="category" ngModel></td>
+                </tr>
+                 <tr>
+                    <td> <label>Stocks:</label></td>
+                    <td><input type="text" name="stocks" ngModel></td>
+                </tr>
+                
+                <tr>
+                    <td><button type="submit">Submit</button> </td>
+                </tr>
+              </table>
+
+  </form>
+</div>

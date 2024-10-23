@@ -1,0 +1,4 @@
+db.pesticide.insert({ pesticideID:125,name:'Azadirachtin',title:'PesticideTitle1',description:'AZA-Direct, Bioneem, Azatin, Align (botanical; caution label)'});
+db.pesticide.insert({ pesticideID:126,name:'Bacillus thuringiensis',title:'PesticideTitle2',description:'Dipel, Thuricide, Worm Ender, Caterpillar Killer; all kill caterpillar insects by acting as a stomach caution label'});
+db.pesticide.insert({ pesticideID:127,name:'Bifenthrin',title:'PesticideTitle3',description:'Ortho Max Lawn and Garden Insect Killer'});
+db.pesticide.insert({ pesticideID:128,name:'Captan',title:'PesticideTitle4',description:'Mixture of hydrated lime, copper sulfate, and water (inorganic; caution label)'});

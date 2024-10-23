@@ -1,0 +1,19 @@
+ <h2> Environment Details</h2>
+
+<p> ID: {{environment.climateId}}</p>
+<p> Day: {{environment.day}}</p>
+<p> Month: {{environment.month}}</p>
+<p> Year: {{environment.year}}</p>
+<p> Hour: {{environment.hour}}</p>
+<p> Minute: {{environment.minute}}</p>
+<p> Temperature: {{environment.temperature}}</p>
+<p> Humidity: {{environment.humidity}}</p>
+<p> Light: {{environment.light}}</p>
+<p> WindSpeed: {{environment.windSpeed}}</p>
+<p> SoilMoisture: {{environment.soilMoisture}}</p>
+
+
+<p>   <a [routerLink]="['/environmentnew']">New Environment</a>
+     |<a [routerLink]="['/environmentupdate',environment.climateId]">UpdateEnvironment</a>
+     |<a [routerLink]="['/environmentdelete',environment.climateId]">DeleteEnvironment</a>
+</p>

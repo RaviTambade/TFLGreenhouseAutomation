@@ -1,0 +1,51 @@
+  <div>
+     <form #f="ngForm" (ngSubmit)="submit(f.tankschedule)" >
+    <div>
+      <label for="year">Year</label>
+       <td><input type="text" name="year"  [(ngModel)]="tankschedule.year" ></td>
+    </div>
+
+    <div>
+      <label for="month">Month</label>
+       <td><input type="text" name="month"  [(ngModel)]="tankschedule.month" ></td>
+    </div>
+
+    <div>
+      <label for="day">Day</label>
+      <td><input type="text" name="day"  [(ngModel)]="tankschedule.day" ></td>
+    </div>
+
+     <div>
+      <label for="hour">Hour</label>
+       <td><input type="text" name="hour"  [(ngModel)]="tankschedule.hour" ></td>
+    </div>
+
+ <div>
+      <label for="minute">Minute</label>
+       <td><input type="text" name="minute"  [(ngModel)]="tankschedule.minute" ></td>
+    </div>
+
+     <div>
+      <label for="tankName">TankName</label>
+       <td><input type="text" name="tankName"  [(ngModel)]="tankschedule.tankName" ></td>
+    </div>
+
+    <div>
+      <label for="quantity">Quantity</label>
+       <td><input type="text" name="quantity"  [(ngModel)]="tankschedule.quantity" ></td>
+    </div>
+
+      <div>
+      <label for="solutionId">SolutionId</label>
+       <td><input type="text" name="solutionId"  [(ngModel)]="tankschedule.solutionId" ></td>
+    </div>
+    
+    
+
+     <div>
+      <label for="UsageDuration">UsageDuration</label>
+      <td><input type="text" name="usageDuration"  [(ngModel)]="tankschedule.usageDuration" ></td>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  </div>

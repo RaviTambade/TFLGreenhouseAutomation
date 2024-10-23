@@ -1,0 +1,7 @@
+<h2> Transflower Farms</h2>
+
+<div  *ngFor="let crop of crops">
+ <p>{{crop.cropId}}  | {{crop.name}} | {{crop.category}} |<a [routerLink]="['/cropdetail', crop.cropId]">Details</a></p>
+</div> 
+
+

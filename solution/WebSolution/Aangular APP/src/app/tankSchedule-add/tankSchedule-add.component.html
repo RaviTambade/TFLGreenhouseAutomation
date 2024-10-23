@@ -1,0 +1,55 @@
+ <div>
+     <form #f="ngForm" (ngSubmit)="submit(f.value)" >
+
+    <div>
+      <label for="TankScheduleId">TankScheduleId</label>
+      <input type="text" id="tankscheduleId" placeholder="tankscheduleId" name="tankscheduleId" ngModel>
+    </div>
+
+    <div>
+      <label for="year">Year</label>
+      <input type="textarea" id="year"placeholder="year" name="year" ngModel>
+    </div>
+
+     <div>
+      <label for="month">Month</label>
+      <input type="textarea" id="month"placeholder="month" name="month" ngModel>
+    </div>
+
+     <div>
+      <label for="day">Day</label>
+      <input type="textarea" id="day"placeholder="day" name="day" ngModel>
+    </div>
+
+     <div>
+      <label for="hour">Hour</label>
+      <input type="textarea" id="hour"placeholder="hour" name="hour" ngModel>
+    </div>
+
+     <div>
+      <label for="minute">Minute</label>
+      <input type="textarea" id="minute"placeholder="minute" name="minute" ngModel>
+    </div>
+
+    <div>
+      <label for="TankName">TankName</label>
+      <input type="text" id="tankName" placeholder="tankName" name="tankName" ngModel>
+    </div>
+
+    <div>
+      <label for="Quantity">Quantity</label>
+      <input type="text" id="quantity" placeholder="quantity" name="quantity" ngModel>
+    </div>
+
+     <div>
+      <label for="solutionId">SolutionID</label>
+      <input type="text" id="solutionId" placeholder="solutionId" name="solutionId" ngModel>
+    </div>
+
+     <div>
+      <label for="UsageDuration">UsageDuration</label>
+      <input type="text" id="usageDuration" placeholder="usageDuration" name="usageDuration" ngModel>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  </div>

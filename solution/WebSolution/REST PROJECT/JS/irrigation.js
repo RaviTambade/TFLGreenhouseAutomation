@@ -1,0 +1,6 @@
+db.irrigation.insert({ irrigationId:125,greenhouseName:'Mhatari',waterMoisture:250,pumpStatus:'Pump is on',startTime:'2017/3/2',duration:3,tankA:'Tank A is half Filled',tankB:'Tank B is empty'});
+db.irrigation.insert({ irrigationId:126,greenhouseName:'Pathar',waterMoisture:250,pumpStatus:'Pump is on',startTime:'2017/3/2',duration:3,tankA:'Tank A is half Filled',tankB:'Tank B is empty'});
+db.irrigation.insert({ irrigationId:127,greenhouseName:'Partan',waterMoisture:250,pumpStatus:'Pump is on',startTime:'2017/3/2',duration:3,tankA:'Tank A is half Filled',tankB:'Tank B is empty'});
+db.irrigation.insert({ irrigationId:128,greenhouseName:'wawar',waterMoisture:250,pumpStatus:'Pump is on',startTime:'2017/3/2',duration:3,tankA:'Tank A is half Filled',tankB:'Tank B is empty'});
+db.irrigation.insert({ irrigationId:129,greenhouseName:'Lakshya',waterMoisture:250,pumpStatus:'Pump is on',startTime:'2017/3/2',duration:3,tankA:'Tank A is half Filled',tankB:'Tank B is empty'});
+db.irrigation.insert({ irrigationId:130,greenhouseName:'Bhordi',waterMoisture:250,pumpStatus:'Pump is on',startTime:'2017/3/2',duration:3,tankA:'Tank A is half Filled',tankB:'Tank B is empty'});

@@ -1,0 +1,9 @@
+ <h2> Transflower Farms</h2>
+
+<div  *ngFor="let requiredclimate of requiredClimates">
+ <p> {{requiredclimate.requiredClimateId}}{{requiredclimate.cropName}}|{{requiredclimate.dayTemperature}}|{{requiredclimate.nightTemperature}}|{{requiredclimate.humidity}}|{{requiredclimate.luminosity}}|{{requiredclimate.waveLength}}|{{requiredclimate.ec}}|{{requiredclimate.ph}}
+     <a [routerLink]="['/requiredClimate', requiredclimate.requiredClimateId]">Details</a>
+     <a [routerLink]="['/requiredClimateUpdate']">Update</a>
+ </p>
+ <a [routerLink]="['/requiredClimateInsert']">Insert</a>
+</div> 

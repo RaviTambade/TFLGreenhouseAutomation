@@ -1,0 +1,64 @@
+
+<div >
+  <h2 >Demo Form: New Irrigation</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" >
+
+    <div>
+      <label for="greenhouseInput">Greenhouse Name</label>
+      <input type="text"
+             id="greenhouseInput"
+             placeholder="Enter Greenhouse name here"
+             name="greenhouseInput" ngModel>
+    </div>
+
+    <div>
+      <label for="WatermoistureInput">Water Moisture</label>
+      <input type="textarea"
+             id="WatermoistureInput"
+             placeholder="enter wate Moisture level"
+             name="moisture" ngModel>
+    </div>
+
+    <div>
+      <label for="statusInput">Pump Status</label>
+      <input type="text"
+             id="statusInput"
+             placeholder="enter Status"
+             name="Status" ngModel>
+    </div>
+
+    <div>
+      <label for="starttimeInput">Start Time</label>
+      <input type="text"
+             id="starttimeInput"
+             placeholder="enter starttime"
+             name="starttime" ngModel>
+    </div>
+
+    <div>
+      <label for="durationInput">Duration</label>
+      <input type="text"
+             id="durationInput"
+             placeholder="enter Duration"
+             name="Duration" ngModel>
+    </div>
+
+    <div>
+      <label for="TankAInput">Tank A</label>
+      <input type="text"
+             id="TankAInput"
+             placeholder="enter tank A level"
+             name="level" ngModel>
+    </div>
+
+     <div>
+      <label for="TankBInput">Tank B</label>
+      <input type="text"
+             id="TankBInput"
+             placeholder="enter tank B level"
+             name="level" ngModel>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

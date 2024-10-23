@@ -1,0 +1,7 @@
+<h2> Fertilizer List</h2>
+
+<div  *ngFor="let fertilizer of fertilizers">
+ <p>{{fertilizer.FertilizerId}}  | {{fertilizer.name}} | {{fertilizer.chemicalFormula}} |<a [routerLink]="['/fertilizerdetail', fertilizer.FertilizerId]">Details</a></p>
+</div> 
+
+

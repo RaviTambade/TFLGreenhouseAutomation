@@ -1,0 +1,13 @@
+<h2> Fertilizer Details</h2>
+
+<p> ID: {{fertilizer.FertilizerId}}</p>
+<p><b> Title: {{fertilizer.name}}</b></p>
+<p> Chemical Formula: {{fertilizer.chemicalFormula}}</p>
+<p> Description: {{fertilizer.description}}</p>
+<p> N: {{fertilizer.N}}</p>
+<p> P: {{fertilizer.P}}</p>
+<p> K :{{fertilizer.K}}</p>
+
+<p> <a [routerLink]="['/fertilizerupdate',fertilizer.FertilizerId]">Update</a>
+<a [routerLink]="['/fertilizernew']">New Fertilizer</a></p>
+    

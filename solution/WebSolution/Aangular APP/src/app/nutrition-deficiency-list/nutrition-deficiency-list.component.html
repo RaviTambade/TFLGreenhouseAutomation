@@ -1,0 +1,5 @@
+<h2> Nutrition Deficiency list</h2>
+
+<div  *ngFor="let nutrition of nutritions">
+ <p>{{nutrition.nutritionId}}  | {{nutrition.cropName}} | {{nutrition.nutricient}} |<a [routerLink]="['/nutritiondetail',nutrition.nutritionId]">Details</a></p>
+ </div> 
