@@ -1,0 +1,1 @@
+sqlcmd -S DESKTOP-9CSCHMM\SQLEXPRESS -d TFLGreenhouse -E -i "I:\TFL files\TFLGreenhouseAutomation\solution\DBSolution\MsSQL\spdbEXEC.sql"

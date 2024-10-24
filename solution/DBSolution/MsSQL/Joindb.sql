@@ -9,7 +9,7 @@
 	FROM Sensors s
 	JOIN SensorReadings sr ON s.SensorID =sr.SensorID
 	ORDER BY sr.ReadingTime DESC;
- 
+
 
 -- 3.Get Recent Sensor Readings for a Specific Sensor Type
 SELECT sr.ReadingID,sr.ReadingValue,s.SensorType
@@ -84,3 +84,4 @@ SELECT s.SensorID, s.SensorType, sr.ReadingValue, sr.ReadingTime
 FROM Sensors s
 JOIN SensorReadings sr ON s.SensorID =sr.SensorID
 WHERE sr.ReadingTime = (SELECT MAX(ReadingTime) FROM SensorReadings WHERE SensorID = s.SensorID);
+
