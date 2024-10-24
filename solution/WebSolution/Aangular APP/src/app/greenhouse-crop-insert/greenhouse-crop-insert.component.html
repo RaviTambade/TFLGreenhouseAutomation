@@ -1,0 +1,44 @@
+<p>
+  New Greenhouse Crop
+</p>
+<div >
+  <h2 >Demo Form: New Crop</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" >
+
+ <div>
+      <label for="cropID">Crop ID</label>
+      <input type="text" id="cropId" placeholder="Enter crop cropID here" name="cropId" ngModel>
+    </div>
+
+    <div>
+      <label for="name">Crop Name</label>
+      <input type="text" id="titleInput" placeholder="Enter crop name here" name="name" ngModel>
+    </div>
+
+    <div>
+      <label for="CategoryInput">Category</label>
+      <input type="textarea" id="CategoryInput"placeholder="enter Category" name="category" ngModel>
+    </div>
+
+    <div>
+      <label for="DescriptionInput">Description</label>
+      <input type="text" id="DescriptionInput" placeholder="enter Description" name="description" ngModel>
+    </div>
+
+      <div>
+      <label for="plantationDate">PlantationDate</label>
+      <input type="text" id="plantationDate" placeholder="enter plantationDate" name="plantationDate" ngModel>
+    </div>
+
+    <div>
+      <label for="stage">stage</label>
+      <input type="text" id="stage" placeholder="enter stage" name="stage" ngModel>
+    </div>
+    <div>
+      <label for="SeasonInput">Season</label>
+      <input type="text" id="seasonInput" placeholder="enter season" name="season" ngModel>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

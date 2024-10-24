@@ -1,0 +1,9 @@
+db.crops.insert({
+                 greenHouseId:111,
+                 fan:0,
+                 pump:0,
+                 light:1,
+                 fogger:1,
+                 pad:1,
+                 ventilator:1
+                });

@@ -1,0 +1,33 @@
+<div class="form-group">
+  <h2 > New Pest</h2>  
+  <form #form="ngForm" (ngSubmit)="submit(form.value)" class="border">
+<table>
+
+                <tr>
+                    <td><label>Pest Id:</label></td>
+                    <td><input type="text" name="pestId" ngModel></td>
+                </tr>
+
+                <tr>
+                    <td><label>Pest Name:</label></td>
+                    <td><input type="text" name="name" ngModel></td>
+                </tr>
+                <tr>
+                    <td><label>description:</label></td>
+                    <td><input type="text" name="description" ngModel></td>
+                </tr>
+                <tr>
+                    <td><label>symptoms:</label></td>
+                    <td><input type="text" name="symptoms" ngModel></td>
+                </tr>
+                <tr>
+                      <td><label>remedy:</label></td>
+                      <td><input type="text" name="remedy" ngModel></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button> </td>
+                </tr>
+              </table>
+
+  </form>
+</div>

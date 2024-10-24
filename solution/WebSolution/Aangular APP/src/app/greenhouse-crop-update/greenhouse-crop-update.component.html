@@ -1,0 +1,38 @@
+<div>
+ <h1>Update Crop</h1>
+<br/>
+<div>
+    <form #cropForm="ngForm" (ngSubmit)="submit(cropForm.value)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="title"  [(ngModel)]="crop.name" ></td>
+    </tr>     
+    <tr>
+        <td><label>Category:</label></td>
+        <td><input type="text" name="category"  [(ngModel)]="crop.category"></td>
+    </tr>
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="description"  [(ngModel)]="crop.description"></td>
+    </tr>
+    <tr>
+        <td> <label>Plantation Date:</label></td>
+        <td><input type="text" name="plantationDate"  [(ngModel)]="crop.plantationDate"></td>
+    </tr>
+    <tr>
+        <td> <label>Stage:</label></td>
+        <td><input type="text" name="stage"  [(ngModel)]="crop.stage"></td>
+    </tr>
+    <tr>
+        <td> <label>Season:</label></td>
+        <td><input type="text" name="season"  [(ngModel)]="crop.season"></td>
+    </tr>
+     <tr>
+       <td><button type="submit">Submit</button> </td>
+        
+    </tr>
+</table>
+</form>
+</div>
+</div>

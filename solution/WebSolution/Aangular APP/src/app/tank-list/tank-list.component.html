@@ -1,0 +1,13 @@
+<h2> Tank List</h2>
+
+<div  *ngFor="let tank of tanks">
+ 
+ <p>{{tank.tankId}}</p>
+       <p>{{tank.category}}</p>
+ <p>
+    <a [routerLink]="['/tankdetail', tank.tankId]">Details</a>
+      
+    </p>
+ 
+      
+</div> 

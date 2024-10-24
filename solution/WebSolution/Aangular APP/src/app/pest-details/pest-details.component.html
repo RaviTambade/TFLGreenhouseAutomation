@@ -1,0 +1,14 @@
+<h2> Pest Details</h2>
+
+<p> ID: {{pest.pestId}}</p>
+<p><b> name: {{pest.name}}</b></p>
+<p> description: {{pest.description}}</p>
+<p> symptoms : {{pest.symptoms}}</p>
+<p> remedy: {{pest.remedy}}</p>
+<a [routerLink]="['/newpest']">NewDisease</a>
+
+<p> 
+    <a [routerLink]="['/pestupdate', pest.pestId]">Update Pest</a>
+|   <a [routerLink]="['/pestdelete', pest.pestId]">Delete Pest</a>
+
+</p>

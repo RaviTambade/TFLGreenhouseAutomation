@@ -1,0 +1,5 @@
+<h2> List of Diseases</h2>
+
+<div  *ngFor="let disease of diseases">
+ <p>{{disease.diseaseId}}  | {{disease.name}} |<a [routerLink]="['/diseasedetail', disease.diseaseId]">Details</a></p>
+ </div> 

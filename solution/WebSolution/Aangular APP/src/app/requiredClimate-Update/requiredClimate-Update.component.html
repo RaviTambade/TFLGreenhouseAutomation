@@ -1,0 +1,49 @@
+<div>
+     <form #requiredClimateForm="ngForm" (ngSubmit)="onSubmit(requiredClimateForm.value)" class="border">
+    <div>
+      <label for="RequiredClimateId">Required Climate Id</label>
+      <td><input type="text" name="requiredClimateId" placeholder="Enter Id" [(ngModel)]="requiredClimate.requiredClimateId" ></td>
+    </div>
+
+    <div>
+      <label for="Crop Name">Crop Name</label>
+      <td><input type="textArea" name="cropName"  placeholder="enter Name"  [(ngModel)]="requiredClimate.cropName" ></td>
+    </div>
+
+    <div>
+      <label for="Day Temperature">Day Temperature</label>
+      <td><input type="number" placeholder="0.00" name="dayTemperature"  [(ngModel)]="requiredClimate.dayTemperature" ></td>
+    </div>
+
+    <div>
+      <label for="Night Temperature">Night Temperature</label>
+      <td><input type="number" placeholder="0.00" name="nightTemperature"  [(ngModel)]="requiredClimate.nightTemperature" ></td>
+    </div>
+    
+    <div>
+      <label for="Humidity">Humidity</label>
+      <td><input type="number" placeholder="0.00" name="humidity"  [(ngModel)]="requiredClimate.humidity" ></td>
+    </div>
+
+    <div>
+      <label for="Luminosity">Luminosity</label>
+      <td><input type="number"  name="luminosity"  [(ngModel)]="requiredClimate.luminosity" ></td>
+    </div>
+
+    <div>
+      <label for="WaveLength">Wave Length</label>
+      <td><input type="number"  name="waveLength" placeholder="0.00"  [(ngModel)]="requiredClimate.waveLength" ></td>
+    </div>
+
+    <div>
+      <label for="Ec">Ec</label>
+      <td><input type="number"  name="ec" placeholder="0.00" [(ngModel)]="requiredClimate.ec" ></td>
+    </div>
+
+    <div>
+      <label for="Ph">Ph</label>
+      <td><input type="number"  name="ph" placeholder="0.00" [(ngModel)]="requiredClimate.ph" ></td>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  </div>

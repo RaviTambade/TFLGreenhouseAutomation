@@ -1,0 +1,77 @@
+
+<h2> List of Greenhouse</h2>
+
+<div  *ngFor="let greenhouse of greenhouses">
+ <p>{{greenhouse.greenhouseId}}  | {{greenhouse.title}} |
+     <a [routerLink]="['/greenhousedetails', greenhouse.greenhouseId]">Details</a></p>
+ </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="products" class="row list-group">
+    <div class="item  col-sm-4 col-md-4" *ngFor="let greenhouse of greenhouses">
+        <div class="thumbnail">
+            <img class="group list-group-image" src="{{greenhouse.image}}" alt="" />
+            <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                    <p class="group inner list-group-item-text">
+                          <p>{{greenhouse.crop}} </p> 
+                        <h4> {{greenhouse.title}}</h4>
+       <p><a [routerLink]="['/greenhousedetails', greenhouse.greenhouseId]" class="btn btn-primary">Details</a></p>
+               
+                </h4>
+                
+                </div>
+        </div>
+    </div>  
+</div>-->
+

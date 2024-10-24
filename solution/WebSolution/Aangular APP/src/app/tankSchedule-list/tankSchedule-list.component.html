@@ -1,0 +1,13 @@
+<h2> Tank Schedules</h2>
+
+<div  *ngFor="let tankSchedule of tankschedules">
+ 
+ <p>{{tankSchedule.tankscheduleId}}</p>
+       <p>{{tankSchedule.tankName}}</p>
+ <p>
+    <a [routerLink]="['/tankScheduledetail', tankSchedule.tankscheduleId]">Details</a>
+      
+    </p>
+ 
+      
+</div> 

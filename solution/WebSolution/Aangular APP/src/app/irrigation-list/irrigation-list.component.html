@@ -1,0 +1,6 @@
+<h2>Irrigation List</h2>
+
+<div  *ngFor="let irrigation of irrigations">
+ <p>{{irrigation.irrigationId}}  | {{irrigation.greenhouseName}} | {{irrigation.pumpStatus}} 
+     |<a [routerLink]="['/irrigationdetail', irrigation.irrigationId]">Details</a></p>
+ </div> 

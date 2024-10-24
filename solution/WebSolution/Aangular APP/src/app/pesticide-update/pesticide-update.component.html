@@ -1,0 +1,20 @@
+<div>
+     <form #pesticideForm="ngForm" (ngSubmit)="onSubmit(pesticideForm.value)" class="border">
+    <div>
+      <label for="Name">Pesticide Name</label>
+      <td><input type="text" name="name"  [(ngModel)]="pesticide.name" ></td>
+    </div>
+
+    <div>
+      <label for="Pesticide Title">Pesticide Name</label>
+      <td><input type="text" name="title"  [(ngModel)]="pesticide.title" ></td>
+    </div>
+
+    <div>
+      <label for="Pesticide Description">Pesticide Description</label>
+      <td><input type="text" name="title"  [(ngModel)]="pesticide.description" ></td>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+  </div>

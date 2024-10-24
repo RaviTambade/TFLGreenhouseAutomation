@@ -1,0 +1,26 @@
+<div>
+     <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" >
+
+    <div>
+      <label for="Pesticide ID">PesticideID</label>
+      <input type="text" id="pesticideID" placeholder="Enter ID" name="pesticideID" ngModel>
+    </div>
+
+    <div>
+      <label for="Pesticide Name">Pesticide Name</label>
+      <input type="textarea" id="pesticideName"placeholder="enter Name" name="name" ngModel>
+    </div>
+
+    <div>
+      <label for="Pesticide Title">Pesticide Title</label>
+      <input type="text" id="pesticideTilte" placeholder="enter Pesticide Title" name="title" ngModel>
+    </div>
+
+    <div>
+      <label for="Description">Description</label>
+      <input type="text" id="description" placeholder="description" name="description" ngModel>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+  </div>

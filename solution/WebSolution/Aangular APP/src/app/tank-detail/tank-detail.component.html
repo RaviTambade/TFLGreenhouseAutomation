@@ -1,0 +1,14 @@
+<h2> Tank Details</h2>
+
+<p> ID: {{tank.tankId}} </p>
+<p><b> Category:{{tank.category}}</b></p>
+<p><b> GreenHouse ID:{{tank.greenhouseId}}</b></p>
+<p><b> Description:{{tank.description}}</b></p>
+<p><b> Capacity:{{tank.capacity}}</b></p>
+ 
+
+ <p>
+      <a [routerLink]="['/tankadd']">Add</a>|
+      <a [routerLink]="['/tankupdate', tank.tankId]">Update</a>|
+      <a [routerLink]="['/tankdelete', tank.tankId]">Delete</a>
+  </p>

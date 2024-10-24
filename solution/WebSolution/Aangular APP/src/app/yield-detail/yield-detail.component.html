@@ -1,0 +1,15 @@
+ <h2> Yield Details</h2>
+
+<p> ID: {{yld.yieldId}}</p>
+<p><b> Quantity: {{yld.quantity}}</b></p>
+<p> Crop Name: {{yld.description}}</p>
+<p> Day: {{yld.day}}</p>
+<p> Month: {{yld.month}}</p>
+<p> Year: {{yld.year}}</p>
+<p> GreenHouse: {{yld.greenhouseName}}</p>
+
+
+<p>   <a [routerLink]="['/yieldadd']">New Yield</a>
+     |<a [routerLink]="['/yieldupdate',yld.yieldId]">Yield Update</a>
+     |<a [routerLink]="['/yielddelete',yld.yieldId]">Delete</a>
+</p>

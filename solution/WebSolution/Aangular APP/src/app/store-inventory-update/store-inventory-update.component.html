@@ -1,0 +1,30 @@
+<div>
+ <h1>Update Inventory</h1>
+<br/>
+<div>
+     <form #form="ngForm" (ngSubmit)="submit(form.item)" class="border">
+    <table>
+    <tr>
+        <td><label>Title:</label></td>
+        <td><input type="text" name="title"  [(ngModel)]="item.title" ></td>
+    </tr>     
+    <tr>
+        <td><label>Description:</label></td>
+        <td><input type="text" name="description"  [(ngModel)]="item.description"></td>
+    </tr>
+    <tr>
+        <td><label>Category:</label></td>
+        <td><input type="text" name="category"  [(ngModel)]="item.category"></td>
+    </tr>
+    <tr>
+        <td> <label>Stocks:</label></td>
+        <td><input type="text" name="stocks"  [(ngModel)]="item.stocks"></td>
+    </tr>
+     
+    <tr>
+       <td><button type="submit">Submit</button> </td>
+    </tr>
+</table>
+</form>
+</div>
+</div>

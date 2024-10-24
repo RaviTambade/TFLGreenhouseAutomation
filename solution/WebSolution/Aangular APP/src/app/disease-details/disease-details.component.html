@@ -1,0 +1,13 @@
+<h2> Disease Details</h2>
+
+<p> ID: {{disease.diseaseId}}</p>
+<p><b> Title: {{disease.name}}</b></p>
+<p> Description: {{disease.description}}</p>
+<p> Symptoms: {{disease.symptoms}}</p>
+<p> Remedy: {{disease.remedy}}</p>
+
+
+<p>   <a [routerLink]="['/newdisease']">NewDisease</a>
+     |<a [routerLink]="['/updatedisease',disease.diseaseId]">UpdateDisease</a>
+     |<a [routerLink]="['/deletedisease',disease.diseaseId]">DeleteDisease</a>
+</p>

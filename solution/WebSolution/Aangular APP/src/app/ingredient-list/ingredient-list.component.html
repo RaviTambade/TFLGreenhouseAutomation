@@ -1,0 +1,26 @@
+<!-- 
+<div class="row">
+      <div class="col-sm-4 col-md-4"  *ngFor="let ingredient of ingredients"> 
+             <div class="thumbnail">
+                            <div class="caption">    
+                                 
+                                            <p>{{ingredient.ingredientsID}}</p> 
+                                             <h4> {{ingredient.solutionName}}</h4>
+                                               
+       <p><a [routerLink]="['/ingredientdetail',ingredient.ingredientsID]" class="btn btn-primary" role="button">Details</a></p>
+       <p><a [routerLink]="['/ingredientupdate']"class="btn btn-primary" role="button">Update</a></p>
+      
+              </div> 
+         </div> 
+      </div>
+ </div>-->
+
+
+ <h2> Ingredients list</h2>
+
+<div  *ngFor="let ingredient of ingredients">
+ <p>{{ingredient.ingredientsID}}  | {{ingredient.solutionName}}
+     |<a [routerLink]="['/ingredientdetail',ingredient.ingredientsID]">Details</a></p>
+ </div> 
+
+ 

@@ -1,0 +1,26 @@
+  <div>
+     <form #f="ngForm" (ngSubmit)="submit(f.tank)" >
+    <div>
+      <label for="category">Category</label>
+       <td><input type="text" name="category"  [(ngModel)]="tank.category" ></td>
+    </div>
+
+    <div>
+      <label for="greenhouseId">GreenHouseID</label>
+       <td><input type="text" name="greenhouseId"  [(ngModel)]="tank.greenhouseId" ></td>
+    </div>
+
+    <div>
+      <label for="description">Description</label>
+      <td><input type="text" name="description"  [(ngModel)]="tank.description" ></td>
+    </div>
+
+     <div>
+      <label for="capacity">Capacity</label>
+       <td><input type="text" name="capacity"  [(ngModel)]="tank.capacity" ></td>
+    </div>
+
+  
+    <button type="submit">Submit</button>
+  </form>
+  </div>

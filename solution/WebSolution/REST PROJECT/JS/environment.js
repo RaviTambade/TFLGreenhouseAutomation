@@ -1,0 +1,10 @@
+db.environment.insert({climateId:1,climatetime:'01/02/2017 15:10',temperature:25,humidity:50,light:55000,windSpeed:8,co2:720,soilMoisture:25,ph:7,ec:0.6});
+db.environment.insert({climateId:2,climatetime:'01/02/2017 15:15',temperature:28,humidity:52,light:54585,windSpeed:8.5,co2:715,soilMoisture:28,ph:7,ec:0.7});
+db.environment.insert({climateId:3,climatetime:'01/02/2017 15:20',temperature:30,humidity:55,light:54985,windSpeed:8.7,co2:710,soilMoisture:29,ph:7.2,ec:0.7});
+db.environment.insert({climateId:4,climatetime:'01/02/2017 15:25',temperature:32,humidity:57,light:54876,windSpeed:8.4,co2:710,soilMoisture:29,ph:8,ec:0.6});
+db.environment.insert({climateId:5,climatetime:'01/02/2017 15:30',temperature:34,humidity:60,light:55121,windSpeed:8.1,co2:689,soilMoisture:30,ph:8,ec:0.6});
+db.environment.insert({climateId:6,climatetime:'01/02/2017 15:35',temperature:31,humidity:60,light:55424,windSpeed:7.9,co2:680,soilMoisture:35,ph:7,ec:0.7});
+db.environment.insert({climateId:7,climatetime:'01/02/2017 15:40',temperature:32,humidity:60,light:54246,windSpeed:7.2,co2:675,soilMoisture:35,ph:7.5,ec:0.8});
+db.environment.insert({climateId:8,climatetime:'01/02/2017 15:45',temperature:29,humidity:57,light:52365,windSpeed:7.5,co2:670,soilMoisture:40,ph:7.2,ec:0.9});
+db.environment.insert({climateId:9,climatetime:'01/02/2017 15:50',temperature:31,humidity:52,light:53625,windSpeed:8.5,co2:668,soilMoisture:40,ph:7.3,ec:0.8});
+db.environment.insert({climateId:10,climatetime:'01/02/2017 15:55',temperature:30,humidity:51,light:54253,windSpeed:8,co2:660,soilMoisture:42,ph:7.2,ec:0.8});

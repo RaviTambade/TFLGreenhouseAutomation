@@ -1,0 +1,31 @@
+ 
+<div class="form-group">
+                <h1>New INgredient </h1>
+                <form #form="ngForm" (ngSubmit)="submit(form.value)" class="border">
+                <table>
+                <tr>
+                    <td><label>ID:</label></td>
+                    <td><input type="text" name="ingredientsID" ngModel></td>
+                </tr>
+                <tr>
+                    <td><label>SolutionName:</label></td>
+                    <td><input type="text" name="solutionName" ngModel></td>
+                </tr>
+                <tr>
+                    <td><label>FertilizerName:</label></td>
+                    <td><input type="text" name="fertilizerName" ngModel></td>
+                </tr>
+                <tr>
+                      <td><label>Quantity:</label></td>
+                      <td><input type="text" name="quantity" ngModel></td>
+                </tr>
+                 
+                <tr>
+                    <td><button type="submit">Submit</button> </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+
+
+

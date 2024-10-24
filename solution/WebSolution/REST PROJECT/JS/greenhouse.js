@@ -1,0 +1,6 @@
+db.greenhouse.insert({greenhouseId:1,title:'Mhatari',description:'',crop:'Gerbera',bed:23,plantationDate:'1/06/2016',stage:'Germination', plants:5520,fans:10,image:''});
+db.greenhouse.insert({greenhouseId:2,title:'Pathar',description:'',crop:'Rose',bed:23,plantationDate:'1/06/2016',stage:'Sapling', plants:5520,fans:20,image:''});
+db.greenhouse.insert({greenhouseId:3,title:'Partan',description:'',crop:'carnation',bed:23,plantationDate:'1/06/2016',stage:'Flowering', plants:5520,fans:12,image:''});
+db.greenhouse.insert({greenhouseId:4,title:'Bhordi',description:'',crop:'Cherry Tomato',bed:23,plantationDate:'1/06/2016',stage:'Sapling', plants:5520,fans:15,image:''});
+db.greenhouse.insert({greenhouseId:5,title:'Lakshya',description:'',crop:'Broccoli',bed:23,plantationDate:'1/06/2016',stage:'Germination', plants:5520,fans:20,image:''});
+db.greenhouse.insert({greenhouseId:6,title:'Wawar',description:'',crop:'Cucumber',bed:23,plantationDate:'1/06/2016',stage:'Vegetative', plants:5520,fans:10,image:''});

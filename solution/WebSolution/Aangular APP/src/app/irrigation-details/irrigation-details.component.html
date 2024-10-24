@@ -1,0 +1,15 @@
+<h2> Irrigation Details</h2>
+
+<p> ID: {{irrigation.irrigationId}}</p>
+<p><b> Greenhouse Name: {{irrigation.greenhouseName}}</b></p>
+<p> Water Moisture Level: {{irrigation.waterMoisture}}</p>
+<p> Pump Status: {{irrigation.pumpStatus}}</p>
+<p> Start Time: {{irrigation.startTime}}</p>
+<p> Duration: {{irrigation.duration}}</p>
+<p> Tank A: {{irrigation.tankA}}</p>
+<p> Tank B: {{irrigation.tankB}}</p>
+
+<p> <a [routerLink]="['/irrigationnew']">New</a>
+     |<a [routerLink]="['/irrigationupdate',irrigation.irrigationId]">Update</a> 
+     |<a [routerLink]="['/irrigationdelete',irrigation.irrigationId]">Delete</a></p>
+

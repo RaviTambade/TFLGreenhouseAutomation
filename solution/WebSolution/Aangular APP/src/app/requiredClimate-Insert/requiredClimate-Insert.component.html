@@ -1,0 +1,44 @@
+
+    <div >
+        <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+        <div>
+            <label for="Climate ID"> Climate Id </label>
+            <input type="text" id="RequiredClimateID" placeholder="Enter Id" name="RequiredClimateID" ngModel>
+        </div>
+        <div>
+            <label for="Climate ID"> Crop Name </label>
+            <input type="textArea" id="CropName" placeholder="enter Name" name="Name" ngModel>
+        </div>
+        <div>
+            <label for="DayTemperature"> Day Temperature </label>
+            <input type="number" id="idDayTemperature" placeholder="0.00" name="idDayTemperature" ngModel>
+        </div>
+        <div>
+            <label for="Night Temperature">Night Temperature </label>
+            <input type="number" step="0.01" value="0.00" placeholder="0.00" id="idNightTemperature" ngModel>
+        </div>
+        <div>
+            <label for="Humidity">Humidity</label>
+            <input type="number" step="0.01" value="0.00" placeholder="0.00" id="idHumidity">
+        </div>
+        <div>
+            <label for="Luminosity">Luminosity</label>
+            <input type="number" id="idLuminosity">
+        </div>
+        <div>
+            <label for="Wave Length">Wave length</label>
+            <input type="number" step="0.01" value="0.00" placeholder="0.00" id="idWaveLength">
+        </div>
+        <div>
+            <label for="Ec">Ec</label>
+            <input type="number" step="0.01" value="0.00" placeholder="0.00" id="idEc">
+        </div>
+        <div>
+            <label for="Ph">Ph</label>
+            <input type="number" step="0.01" value="0.00" placeholder="0.00" id="idPh">
+        </div>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+  

@@ -1,0 +1,16 @@
+<h2> Pesticide Details</h2>
+
+<p> ID: {{pesticide.pesticideID}}</p>
+<p><b> Title: {{pesticide.name}}</b></p>
+<p> Crop: {{pesticide.title}}</p>
+<p> Description: {{pesticide.description}}</p>
+
+ <p>   
+    <a [routerLink]="['/pesticideadd']">New Pesticide</a>|
+    <a [routerLink]="['/pesticideupdate',pesticide.pesticideID]">Update Pesticide</a>|
+    <a [routerLink]="['/pesticidedelete',pesticide.pesticideID]">Delete</a>
+</p>
+
+    
+    
+

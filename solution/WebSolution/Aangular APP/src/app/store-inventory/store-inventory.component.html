@@ -1,0 +1,7 @@
+
+<h2> List Of Inventories</h2>
+
+<div  *ngFor="let item of items">
+ <p>{{item.itemId}} | {{item.title}} 
+   <a [routerLink]="['/itemdetails', item.itemId]">Details</a>
+</div> 

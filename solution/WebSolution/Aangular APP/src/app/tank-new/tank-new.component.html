@@ -1,0 +1,33 @@
+ <div>
+     <form #f="ngForm" (ngSubmit)="submit(f.value)" >
+
+    <div>
+      <label for="TankID">TankID</label>
+      <input type="text" id="tankId" placeholder="tankId" name="tankId" ngModel>
+    </div>
+
+    <div>
+      <label for="Category">Category</label>
+      <input type="textarea" id="year"placeholder="category" name="category" ngModel>
+    </div>
+
+     <div>
+      <label for="greenhouseId">GreenHouse ID</label>
+      <input type="textarea" id="greenhouseId"placeholder="greenhouseId" name="greenhouseId" ngModel>
+    </div>
+
+     <div>
+      <label for="description">Description</label>
+      <input type="textarea" id="description"placeholder="description" name="description" ngModel>
+    </div>
+
+     <div>
+      <label for="capacity">Capacity</label>
+      <input type="textarea" id="capacity"placeholder="capacity" name="capacity" ngModel>
+    </div>
+
+    
+ 
+    <button type="submit">Submit</button>
+  </form>
+  </div>

@@ -1,0 +1,5 @@
+ <h2> List of Yields</h2>
+
+<div  *ngFor="let y of yilds">
+ <p>{{y.yieldId}}  | {{y.cropName}} |<a [routerLink]="['/yielddetails', y.yieldId]">Details</a></p>
+ </div> 

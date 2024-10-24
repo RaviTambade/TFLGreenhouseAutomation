@@ -1,0 +1,69 @@
+ <div>
+ <h1>Update Environment</h1>
+<br/>
+<div>
+    <form #environmentForm="ngForm" (ngSubmit)="onSubmit(environmentForm.value)" class="border">
+    <table>
+    <tr>
+        <td><label>Day:</label></td>
+        <td><input type="text" name="day"  [(ngModel)]="environment.day" ></td>
+    </tr>  
+    <tr>
+        <td><label>Month:</label></td>
+        <td><input type="text" name="month"  [(ngModel)]="environment.month" ></td>
+    </tr> 
+    <tr>
+        <td><label>Year:</label></td>
+        <td><input type="text" name="year"  [(ngModel)]="environment.year" ></td>
+    </tr> 
+    <tr>
+        <td><label>Hour:</label></td>
+        <td><input type="text" name="hour"  [(ngModel)]="environment.hour" ></td>
+    </tr>    
+
+        <tr>
+        <td><label>Minute:</label></td>
+        <td><input type="text" name="minute"  [(ngModel)]="environment.minute" ></td>
+    </tr> 
+
+    <tr>
+        <td><label>Temperature:</label></td>
+        <td><input type="text" name="chemicalFormula"  [(ngModel)]="environment.temperature"></td>
+    </tr>
+    <tr>
+        <td><label>Humidity:</label></td>
+        <td><input type="text" name="description"  [(ngModel)]="environment.humidity"></td>
+    </tr>
+    <tr>
+        <td> <label>Light:</label></td>
+        <td><input type="text" name="N"  [(ngModel)]="environment.light"></td>
+    </tr>
+    <tr>
+        <td> <label>Wind Speed:</label></td>
+        <td><input type="text" name="P"  [(ngModel)]="environment.windSpeed"></td>
+    </tr>
+    <tr>
+        <td> <label>CO2:</label></td>
+        <td><input type="text" name="K"  [(ngModel)]="environment.co2"></td>
+    </tr>
+
+     <tr>
+        <td> <label>SoilMoisture:</label></td>
+        <td><input type="text" name="Ca"  [(ngModel)]="environment.soilMoisture"></td>
+    </tr>
+    <tr>
+        <td> <label>PH:</label></td>
+        <td><input type="text" name="Mg"  [(ngModel)]="environment.ph"></td>
+    </tr>
+    <tr>
+        <td> <label>EC:</label></td>
+        <td><input type="text" name="Cl"  [(ngModel)]="environment.ec"></td>
+    </tr>
+    
+    <tr>
+       <td><button type="submit">Update</button> </td>
+    </tr>
+</table>
+</form>
+</div>
+</div>

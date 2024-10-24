@@ -1,0 +1,14 @@
+<h2> Greenhouse Crop Details</h2>
+
+<p> ID: {{crop.cropId}}</p>
+<p><b> Title: {{crop.name}}</b></p>
+<p> Category: {{crop.category}}</p>
+<p> Plantation Date: {{crop.plantationDate}}</p>
+<p> Crop Description: {{crop.description}}</p>
+<p> stage: {{crop.stage}}</p>
+
+<p> <a [routerLink]="['/cropupdate',crop.cropId]">Update</a>|
+<a [routerLink]="['/cropinsert']">New Crop</a>|
+<a [routerLink]="['/cropdelete',crop.cropId]">Delete Crop</a>|
+ 
+    

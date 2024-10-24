@@ -1,0 +1,27 @@
+<div>
+ <h1>Update Ingredient</h1>
+<br/>
+<div>
+     <form #form="ngForm" (ngSubmit)="submit(form.ingredient)" class="border">
+    <table>
+    <tr>
+        <td><label>SolutionName:</label></td>
+        <td><input type="text" name="solutionName"  [(ngModel)]="ingredient.solutionName" ></td>
+    </tr>     
+    <tr>
+        <td><label>FertilizerName:</label></td>
+        <td><input type="text" name="fertilizerName"  [(ngModel)]="ingredient.fertilizerName"></td>
+    </tr>
+    <tr>
+        <td><label>Quantity:</label></td>
+        <td><input type="text" name="quantity"  [(ngModel)]="ingredient.quantity"></td>
+    </tr>
+    
+    <tr>
+       <td><button type="submit">Submit</button> </td>
+        
+    </tr>
+</table>
+</form>
+</div>
+</div>

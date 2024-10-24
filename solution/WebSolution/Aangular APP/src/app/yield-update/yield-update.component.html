@@ -1,0 +1,41 @@
+<div>
+ <h1>Update Yield</h1>
+<br/>
+<div>
+     <form #form="ngForm" (ngSubmit)="submit(form.yld)" class="border">
+    <table>
+    <tr>
+        <td><label>Quantity:</label></td>
+        <td><input type="text" name="quantity"  [(ngModel)]="yld.quantity" ></td>
+    </tr>     
+    <tr>
+        <td><label>CropName:</label></td>
+        <td><input type="text" name="cropName"  [(ngModel)]="yld.cropName"></td>
+    </tr>
+    <tr>
+        <td><label>Day:</label></td>
+        <td><input type="text" name="day"  [(ngModel)]="yld.day"></td>
+    </tr>
+    <tr>
+        <td> <label>Month:</label></td>
+        <td><input type="text" name="month"  [(ngModel)]="yld.month"></td>
+    </tr>
+
+       <tr>
+        <td> <label>Year:</label></td>
+        <td><input type="text" name="year"  [(ngModel)]="yld.year"></td>
+    </tr>
+
+       <tr>
+        <td> <label>Green House:</label></td>
+        <td><input type="text" name="greenhouseName"  [(ngModel)]="yld.greenhouseName"></td>
+    </tr>
+     
+    <tr>
+       <td><button type="submit">Submit</button> </td>
+        
+    </tr>
+</table>
+</form>
+</div>
+</div>
