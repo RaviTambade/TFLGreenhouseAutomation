@@ -94,9 +94,11 @@ select * from employees
 
 
 
+CREATE TABLE TempCount(Count INT);
+INSERT INTO TempCount VALUES (0);
+SELECT * FROM TempCount;
 
-
-
+select * from SensorReadings;
   
   
  
